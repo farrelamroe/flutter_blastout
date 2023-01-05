@@ -6,6 +6,7 @@ import "package:flutter_blastout/pages/pages_one.dart";
 import "package:flutter_blastout/pages/pages_two.dart";
 import "package:flutter_blastout/pages/pages_three.dart";
 import "package:flutter_blastout/pages/pages_four.dart";
+import "package:flutter_blastout/pages/clock_counter.dart";
 
 void main() => runApp(MyApp());
 
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: PagesTwo(),
+      home: PagesOne(),
     );
   }
 }

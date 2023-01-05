@@ -1,3 +1,5 @@
+// ignore_for_file: unused_import, use_key_in_widget_constructors, annotate_overrides, prefer_const_constructors, sized_box_for_whitespace, sort_child_properties_last
+
 import "package:flutter/material.dart";
 import "package:google_fonts/google_fonts.dart";
 
@@ -63,17 +65,6 @@ class _PagesThreeState extends State<PagesThree> {
                       onPressed: kurang,
                     ),
                   ),
-                  GestureDetector(
-                    onTap: () {
-                      setState(() {});
-                    },
-                    child: AnimatedContainer(
-                      width: 100.0,
-                      height: 100.0,
-                      color: Color(0xffF76780),
-                      duration: Duration(seconds: 1),
-                    ),
-                  )
                 ],
               )
             ],
