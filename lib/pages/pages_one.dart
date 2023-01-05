@@ -3,6 +3,7 @@ import "package:flutter/material.dart";
 import 'package:flutter_blastout/pages/pages_four.dart';
 import 'package:flutter_blastout/pages/pages_three.dart';
 import 'package:flutter_blastout/pages/pages_two.dart';
+import 'package:flutter_blastout/widgets/footer.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class PagesOne extends StatefulWidget {
@@ -132,17 +133,21 @@ class _PagesOneState extends State<PagesOne> {
                   )),
               SizedBox(height: 20),
               Container(
-                  alignment: Alignment.center,
-                  width: 150.63,
-                  height: 50.51,
-                  decoration: BoxDecoration(
-                    color: Color(0xffFFBD0C),
+                alignment: Alignment.center,
+                width: 150.63,
+                height: 50.51,
+                decoration: BoxDecoration(
+                  color: Color(0xffFFBD0C),
+                ),
+                child: Text(
+                  "DAY 2",
+                  style: TextStyle(
+                    fontFamily: "Trans-America",
+                    fontSize: 36,
+                    color: Colors.black,
                   ),
-                  child: Text("DAY 2",
-                      style: TextStyle(
-                          fontFamily: "Trans-America",
-                          fontSize: 36,
-                          color: Colors.black))),
+                ),
+              ),
               SizedBox(height: 20),
               Column(
                 children: [
@@ -223,6 +228,15 @@ class _PagesOneState extends State<PagesOne> {
               ),
             ],
           ),
+        ),
+      ),
+      bottomNavigationBar: BottomAppBar(
+        child: Footer(
+          title: "blastout 2023",
+          beranda: "Beranda",
+          tentang: "Tentang",
+          tryout: "Tryout",
+          mainevent: "Main Event",
         ),
       ),
     );
